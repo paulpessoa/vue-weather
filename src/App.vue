@@ -4,6 +4,16 @@
         <div class="search-box">
         <input type="text" class="search-bar" placeholder="Search ..."/>
         </div>
+        <div class="weather-wrap">
+          <div class="location-box">
+            <div class="location">Recife, BR</div>
+            <div class="date">Segunda-Feira, 6 de maio de 2022</div>
+          </div>
+          <div class="weather-box">
+            <div class="temp">29C</div>
+            <div class="weather">Rain</div>
+          </div>
+        </div>
       </main>
     </div>
 </template>
