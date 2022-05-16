@@ -1,4 +1,8 @@
-# vue-weather
+# Vue Search Weather
+
+
+[<img src="/src/assets/print-vue-weather.png" alt="Vue Weather App Image">](https://vue-weather-sigma.vercel.app/)
+
 
 ## Project setup
 ```
