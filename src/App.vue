@@ -10,9 +10,10 @@
           @keypress="fetchWeather"
         />
         </div>
-        <div class="weather-wrap">
+
+        <div class="weather-wrap" v-if="typeof weather.main !='undefined'">
           <div class="location-box">
-            <div class="location">Recife, BR</div>
+            <div class="location">{{weather.name}}, {{weather.sys.country}}</div>
             <div class="date">Segunda-Feira, 6 de maio de 2022</div>
           </div>
           <div class="weather-box">
@@ -40,7 +41,7 @@ export default {
     methods: {
       fetchWeather (e) {
         if (e.key == "Enter") {
-          fetch(`${this.api_base}weather?q=${this.query}&units=metric&APPID=${this.api_key_key}`)
+          fetch(`${this.url_base}weather?q=${this.query}&units=metric&APPID=${this.api_key}`)
           .then(resp =>{
             return resp.json();
           }).then(this.setResults);
